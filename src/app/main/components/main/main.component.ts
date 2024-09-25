@@ -20,8 +20,8 @@ import { TransitionComponent } from '../../../transitions/components/transition/
 })
 export class MainComponent implements OnInit {
   ngOnInit(): void {
-    this.activePage.set("action")
-    this.previousPage.set("etapes")
+    //this.activePage.set("action")
+    //this.previousPage.set("etapes")
     //console.log(this.programme);
   }
 
