@@ -1,0 +1,22 @@
+.titre {
+    display: flex;
+    width: 510px;
+    height: 80px;
+    justify-content: space-between;
+
+    icon-button{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    span{
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 22px;
+    }
+
+    .fake{
+        width: 60px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,98 @@
+div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .ligne1{
+        flex-direction: row;
+        margin-top: 38px;
+
+        span{
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 30px;
+        }
+
+        switch-button{
+            margin-left: 40px;
+        }
+    }
+
+    .ligne2{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .ligne3{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 10px;
+        .col{
+            display: flex;
+            flex-direction: column;
+            div{
+                input-number{
+                    margin-left: 5px;
+                    margin-right: 10px;
+                    width: 90px;
+                }
+
+                flex-direction: row;
+            }
+        }
+    }
+
+    .ligne4{
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+
+        input-number{
+            width: 50px;
+        }
+    }
+
+    .ligne5{
+        margin-top: 10px;
+        width: 510px;
+        text-align: center;
+
+        span{
+            border-radius: 5px;
+            margin: auto;
+            width: 500px;
+            font-size: 16px;
+            background: red;
+        }
+    }
+
+    app-buttons {
+        margin-top: 26px;
+    }
+}
+
+switch-button{
+    width: 100px;
+    height: 40px;
+}
+
+span{
+    font-size: 22px;
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color:cyan;
+}
+
+.mini{
+    z-index: 99;
+}
+

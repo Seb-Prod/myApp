@@ -1,0 +1,43 @@
+div{
+    display: flex;
+    flex-direction: column;
+
+    .btAcces{
+        margin-top: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+
+        switch-button{
+            width: 120px;
+        }
+    }
+
+    .ligne{
+        margin-top: 10px;
+        height: 30.5px;
+        flex-direction: row;
+
+        span{
+            margin-left: 20px;
+            font-size: 22px;
+            width: 335px;
+        }
+
+        input-text{
+            width: 50px;
+        }
+
+        .produit{
+            width: 100px;
+        }
+
+        switch-button{
+            margin-right: 10px;
+            width: 40px;
+        }
+    }
+
+    app-buttons{
+        margin-top: 49px;
+    }
+}

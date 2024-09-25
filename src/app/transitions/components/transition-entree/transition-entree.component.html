@@ -1,0 +1,11 @@
+<div>
+  <span>{{ lbl }}</span>
+  <input-text
+    [nb]="20"
+    [enabled]="true"
+    [placeHolder]="'label'"
+    [(value)]="texte"
+  />
+  <switch-button label="=0" [poids]="poids[0]" [value]="poids[1]" version="check" color="red" (retour)="onClickBt0($event)"/>
+  <switch-button label="=1" [poids]="poids[0]" [value]="poids[2]" version="check" (retour)="onClickBt1($event)"/>
+</div>

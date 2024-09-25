@@ -1,0 +1,60 @@
+div{
+    display: flex;
+    flex-direction: column;
+
+    .nav{
+        flex-direction: row;
+        transform: translateY(-29px);
+
+        .ap{
+            margin-left: auto;
+        }
+
+    }
+
+    .scroll{
+        height: 210px;
+        overflow: hidden;
+
+        .content{
+            position: relative;
+            top: 0px;
+            transition: .5s;
+
+
+            .sortie{
+                flex-direction: row;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 5px;
+                
+                switch-button{
+                    margin-right: 10px;
+                }
+        
+            }
+
+            .fake{
+                height: 30.5px;
+            }
+        }
+
+        .page1{
+            top:0px
+        }
+
+        .page2{
+            top:-210px
+        }
+
+        .page3{
+            top:-420px
+        }
+
+        
+    }
+    
+    app-buttons{
+        margin-top: 35px;
+    }
+}

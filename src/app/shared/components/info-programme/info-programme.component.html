@@ -1,0 +1,12 @@
+<div>
+  <input-text
+    class="name"
+    [nb]="30"
+    [enabled]="enabled"
+    placeHolder="Nom du programme"
+    [(value)]="name"
+  />
+
+  <span>Codage:</span>
+  <input-number class="codage" [min]="1" [max]="15" [(value)]="codage" [enabled]="enabled"/>
+</div>

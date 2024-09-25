@@ -1,0 +1,23 @@
+div{
+    display: flex;
+    flex-direction: row;
+    
+    span{
+        font-size: 22px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+
+    input-text{
+        margin-right: 0px;
+        width: 290px;
+    }
+
+    switch-button {
+        margin-left: 10px;
+        width: 60px;
+    }
+
+}

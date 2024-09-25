@@ -1,0 +1,59 @@
+<div class="body">
+  <!-- Info sur le programme en cours -->
+  <app-info-programme  [enabled]="true" [(name)]="param.name" [(codage)]="param.code"/>
+  <div class="ref">
+    <span>Référence Produit:</span>
+    <input-text [nb]="8" [enabled]="true" [placeHolder]="'Référence'" [(value)]="param.ref"/>
+  </div>
+  <div class="comptage">
+    <icon-button
+      image="actions-arrow-left"
+      actionName="back"
+      (clicked)="onClick($event)"
+    />
+    <div class="txt">
+      <span>Declencher le comptage</span>
+      <span>du temps de cycle</span>
+      <span>à partir de l'étape n° </span>
+    </div>
+    <input-number [min]="0" [max]="20" [(value)]="param.nEtape"  />
+  </div>
+  <div class="rfid">
+    <div class="left">
+      <span>Gestion du RFID</span>
+      <switch-button
+        label="Tête n°1"
+        [poids]="1"
+        [value]="param.rfid"
+        (retour)="onClickRfid($event)"
+      />
+      <switch-button
+        label="Tête n°2"
+        [poids]="2"
+        [value]="param.rfid"
+        (retour)="onClickRfid($event)"
+      />
+    </div>
+    <div class="right">
+      <switch-button
+        label="Désactivée"
+        color="red"
+        [poids]="0"
+        [value]="param.rfid"
+        (retour)="onClickRfid($event)"
+      />
+      <switch-button
+        class="bt"
+        label="Tête n°1&#10;&#13;&&#10;Tête n°2"
+        [poids]="3"
+        [value]="param.rfid"
+        (retour)="onClickRfid($event)"
+      />
+    </div>
+  </div>
+  <div class="time">
+    <span>Durée mini entre 2 postes:</span>
+    <input-number [min]="0" [max]="1440" [(value)]="param.time"/>
+    <span>Minutes</span>
+  </div>
+</div>

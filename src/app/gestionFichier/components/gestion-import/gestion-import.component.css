@@ -1,0 +1,43 @@
+.body {
+    background: rgb(149,44,20);
+    display: flex;
+    flex-direction: column;
+    height: 384px;
+    width: 510px;
+    position: relative;
+
+    span{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .import{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        display: flex;
+
+        input{
+            width: 100px;
+            margin-right: 40px;
+        }
+
+        button{
+            width: 100px;
+            background: rgb(67, 19, 19);
+            color: white;
+        }
+    }
+
+    .message{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+        span{
+            background: red;
+        }
+        
+    }
+}

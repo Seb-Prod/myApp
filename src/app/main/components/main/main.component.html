@@ -1,0 +1,74 @@
+<div class="body">
+  <div class="screen">
+    <div class="content">
+      <!-- ici s'affichera les écrans le l'application -->
+      @switch (activePage()) { @default { } @case ('etapes') {
+      <ecran-etape
+        (commandeClicked)="onClickCommandButton($event)"
+        [progName]="progName()"
+        [progCode]="progCode()"
+        [(stepIndex)]="stepIndex"
+        [etape]="programme.programme.etapes[stepIndex() - 1]"
+        (actionClicked)="onClickActionButton($event)"
+      />
+      } @case ('gestionFichier') {
+      <ecran-gestion-fichier
+        (commandeClicked)="onClickCommandButton($event)"
+        [progName]="progName()"
+        [progCode]="progCode()"
+      />
+      } @case ('gestionFichierHelp') {
+      <ecran-gestion-fichier-help
+        (clicked)="onClickCommandButton($event)"
+        [progName]="progName()"
+        [progCode]="progCode()"
+      />
+      } @case ('gestionFichierExport'){
+      <ecran-gestion-export
+        (commandeClicked)="onClickCommandButton($event)"
+        [progName]="progName()"
+        [progCode]="progCode()"
+      />
+      } @case ('gestionFichierImport'){
+      <ecran-gestion-import
+        (commandeClicked)="onClickCommandButton($event)"
+        [progName]="progName()"
+        [progCode]="progCode()"
+      />
+      } @case ('paramProg') {
+      <ecran-param
+        (commandeClicked)="onValidParam($event)"
+        [param]="programme.programme.param"
+      />
+      } @case('action'){
+      <ecran-action
+        [stepIndex]="stepIndex()"
+        [actionIndex]="actionIndex()"
+        [action]="
+          programme.programme.etapes[stepIndex() - 1].actions[actionIndex() - 1]
+        "
+        [autreAction]="[
+          programme.programme.etapes[stepIndex() - 1].actions[0].actionID,
+          programme.programme.etapes[stepIndex() - 1].actions[1].actionID,
+          programme.programme.etapes[stepIndex() - 1].actions[2].actionID,
+          programme.programme.etapes[stepIndex() - 1].actions[3].actionID,
+          programme.programme.etapes[stepIndex() - 1].actions[4].actionID
+        ]"
+        [sorties]="programme.programme.sorties"
+        (buttonClicked)="onClickCommandButton($event)"
+        (newAction)="setAction($event)"
+      />
+      } @case('supprimerAction'){
+      <ecran-action-supprime (clicked)="onClickCommandButton($event)" />
+      } @case ('transition') {
+        <ecran-transition [stepIndex]="stepIndexTransition()" [labelEntree]="programme.programme.entrees" [transtion]="programme.programme.transitions[stepIndexTransition()]" (retourClicked)="onValidTransition()"/>
+      }
+    }
+    </div>
+  </div>
+  <!-- logo de l'application -->
+  <div class="logo">
+    <span class="logo">SebProd (2024)</span>
+    <div class="led"></div>
+  </div>
+</div>

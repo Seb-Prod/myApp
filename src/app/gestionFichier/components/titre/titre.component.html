@@ -1,0 +1,10 @@
+<div class="titre">
+  <icon-button image="actions-arrow-left" actionName="etapes" (clicked)="onClick($event)"/>
+  <span>{{titre}}</span>
+  @if(titre == "Aide"){
+    <div class="fake"></div>
+  }@else {
+    <icon-button image="help" actionName="gestionFichierHelp" (clicked)="onClick($event)"/>
+  }
+  
+</div>

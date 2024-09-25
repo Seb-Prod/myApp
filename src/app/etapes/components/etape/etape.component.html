@@ -1,0 +1,14 @@
+<div class="body">
+  <!-- Info sur le programme en cours -->
+  <app-info-programme [name]="progName" [codage]="progCode"/>
+  <div class="step">
+    <!-- Navigation dans le programme -->
+    <app-etape-navigation [(stepIndex)]="stepIndex" (btClicked)="onclickButtonCommande($event)"/>
+    <!-- Contenu de l'étape -->
+    <app-etape-actions [(etape)]="etape" (btActionClicked)="onClickButtonAction($event)"/>
+  </div>
+  <!-- Boutons -->
+  <div class="buttons">
+    <app-buttons (clicked)="onclickButtonCommande($event)"/>
+  </div>
+</div>

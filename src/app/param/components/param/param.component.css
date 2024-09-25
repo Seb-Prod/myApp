@@ -1,0 +1,120 @@
+.body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    height: 384px;
+    width: 510px;
+    position: relative;
+
+    .ref{
+        margin-top: 10px;
+        display: flex;
+
+        span{
+            font-size: 16px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 30px;
+        }
+
+        input-text{
+            margin-left: 20px;
+            width: 172px;
+        }
+
+    }
+
+    .comptage{
+        display: flex;
+        position: relative;
+        margin-top: 10px;
+
+        icon-button{
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: 10px;
+        }
+
+        .txt{
+            display: flex;
+            flex-direction: column;
+        }
+
+        input-number{
+            position: relative;
+            width: 40px;
+            top: 100%;
+            transform: translateY(-33%);
+            z-index: 2;
+        }
+
+    }
+
+    .comptage::after{
+        content: '';
+        position: absolute;
+        width: 510px;
+        height: 2px;
+        background: white;
+        top: calc(100% + 10px);
+        z-index: 0;
+    }
+
+    .rfid{
+        display: flex;
+        margin-top: 20px;
+
+        .left{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+
+            span{
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .right{
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+
+            .bt{
+                height: 85px;
+            }
+        }
+
+        switch-button{
+            margin-top: 5px;
+            width: 150px;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 999;
+        }
+    }
+
+    .time{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        
+        span{
+            font-size: 21px;
+        }
+
+        input-number{
+            margin-right: 10px;
+            width: 65px;
+        }
+    }
+
+    span{
+        font-size: 21px;
+        color: white;
+    }
+}

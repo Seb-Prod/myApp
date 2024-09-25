@@ -1,0 +1,41 @@
+.action{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 408px;
+    height: 297px;
+    color: white;
+
+    span{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    input-text{
+        width: 395px;
+    }
+
+    .content{
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .button{
+            margin: 2px;
+            display: flex;
+            flex-direction: column;
+
+            button{
+                width: 130px;
+                height: 40px;
+                background: white;
+                border: solid 1px blue;
+                border-radius: 5px;
+            }
+
+            button:hover{
+                background: rgba(255, 255, 255, 0.75);
+            }
+        }
+    }
+}

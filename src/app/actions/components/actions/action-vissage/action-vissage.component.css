@@ -1,0 +1,94 @@
+div {
+    display: flex;
+    flex-direction: column;
+
+    .ligne1 {
+        height: 31px;
+        margin-top: 20px;
+        flex-direction: row;
+
+        span{
+            height: 31px;
+            margin-left: 10px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        input-number{
+            width: 50px;
+        }
+
+        switch-button{
+            margin-left: auto;
+        }
+    }
+
+    .ligne2 {
+        height: 31px;
+        margin-top: 20px;
+        margin-left: auto;
+        flex-direction: row;
+        
+        switch-button{
+            width: 170.3px;
+        }
+    }
+
+    
+
+    .ligne3 {
+        margin-top: 20px;
+        flex-direction: row;
+
+        .col2 {
+            flex-direction: column;
+
+            
+            .ligne {
+                flex-direction: row;
+                margin-bottom: 5px;
+            }
+        }
+
+        switch-button{
+            width: 130px;
+            height: 65px;
+            margin-right: 5px;
+        }
+
+        
+
+    }
+
+    .ligne4 {
+        height: 30.5px;
+        flex-direction: row;
+
+        switch-button{
+            width: 130px;
+            margin-right: 5px;
+        }
+        
+    }
+
+    .val{
+        margin-right: 5px;
+        z-index: 99;
+    }
+
+    .tol{
+        width: 70px;
+        margin-right: 5px;
+    }
+
+    span{
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 20px;
+    }
+
+    app-buttons{
+        margin-top: 32px;
+    }
+
+}

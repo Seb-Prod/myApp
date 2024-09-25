@@ -1,0 +1,31 @@
+div{
+    width: 510px;
+    display: flex;
+    flex-direction: row;
+    
+    .div{
+        margin-top: 10px;
+        flex-direction: row;
+        width: 100%;
+
+        .col{
+            width: 50%;
+            flex-direction: column;
+        }
+    }
+    
+    switch-button{
+        width: 220px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    
+    
+}
+
+icon-button{
+    position: absolute;
+    transform: translateY(256px);
+}

@@ -1,0 +1,26 @@
+<div class="body">
+  <!-- Info sur le programme en cours -->
+  <app-info-programme [name]="progName" [codage]="progCode"/>
+  <app-titre titre="Choix du type d'accès" (clicked)="onClick($event)"/>
+  
+  <div class="content">
+    <div class="export div">
+      <div class="label">
+        <span>Exporter</span>
+        <span>le programme</span>
+      </div>
+      <div class="button">
+        <icon-button image="upload" size="big" actionName="gestionFichierExport" (clicked)="onClick($event)"/>
+      </div>
+    </div>
+    <div class="import div">
+      <div class="label">
+        <span>Importer</span>
+        <span>le programme</span>
+      </div>
+      <div class="button">
+        <icon-button image="download" size="big" actionName="gestionFichierImport" (clicked)="onClick($event)"/>
+      </div>
+    </div>
+  </div>
+</div>

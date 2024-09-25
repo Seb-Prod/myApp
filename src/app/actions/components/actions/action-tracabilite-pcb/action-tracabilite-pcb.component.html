@@ -1,0 +1,30 @@
+<div>
+  <div class="ligne1">
+    <span>AL Code:</span>
+    <input-text
+      class="ref"
+      [nb]="8"
+      [enabled]="true"
+      [placeHolder]="'Référence'"
+      [(value)]="param.code"
+    />
+    <span>AL Révision:</span>
+    <input-text
+      class="revision"
+      [nb]="4"
+      [enabled]="true"
+      [placeHolder]="'Révision'"
+      [(value)]="param.revision"
+    />
+  </div>
+  <div class="ligne2">
+    <span>N° PCB dans le TAG RFID:</span>
+    <input-number [(value)]="param.num" [min]="0"  [max]="6"/>
+  </div>
+  <div class="ligne2">
+    <span>Tempo en fin de lecture:</span>
+    <input-number [(value)]="param.tempo" [min]="0"  [max]="9.999" [step]="0.001"/>
+    <span>Sec.</span>
+  </div>
+  <app-buttons (buttonClicked)="onClick($event)"/>
+</div>

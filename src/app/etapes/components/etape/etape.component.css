@@ -1,0 +1,34 @@
+.body{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    height: 384px;
+    width: 510px;
+    position: relative;
+
+    .step{
+        width: 510px;
+        height: 296px;
+        display: flex;
+        flex-direction: row;
+
+        .stepNavigation{
+            width: 92px;
+            height: 296px;
+        }
+
+        .content{
+            width: 418px;
+            height: 296px;
+        }
+    }
+
+    .buttons{
+        position: relative;
+        left: 92px;
+        width: 418px;
+        height: 60px;
+    }
+}
+
+

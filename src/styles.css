@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/RobotoMono.ttf');
+}
+
+html, body{
+    font-family: 'Roboto';
+    height: 100%;
+    user-select: none;
+
+    background: rgb(84, 128, 139);
+	background: radial-gradient(circle, rgba(84, 128, 139, 1) 0%, rgba(3, 59, 79, 1) 100%, rgba(68, 179, 201, 1) 100%);
+    color: white;
+}
+
+input{
+    font-family: 'Roboto';
+    font-size: 20px;
+    border-radius: 1px;
+    background: white;
+    border: 1px solid blue;
+}
+
+input[disabled]{
+    font-family: 'Roboto';
+    font-size: 20px;
+    border-radius: 1px;
+    background: rgb(174, 172, 172);
+    border: 1px solid white;
+    -webkit-text-fill-color: black;
+}

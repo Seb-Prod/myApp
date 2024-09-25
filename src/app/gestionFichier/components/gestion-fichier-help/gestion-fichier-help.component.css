@@ -1,0 +1,34 @@
+.body{
+    background: rgb(242,164,58);
+    display: flex;
+    flex-direction: column;
+    height: 384px;
+    width: 510px;
+    position: relative;
+    color: black;
+
+    .aide{
+        margin-top: 10px;
+        margin-bottom: 15px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px ;
+
+        .titre{
+            display: flex;
+
+            img{
+                max-width: 40px;
+            }
+
+            span{
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: 10px;
+                font-size: 18px;
+            }
+        }
+        
+    }
+}

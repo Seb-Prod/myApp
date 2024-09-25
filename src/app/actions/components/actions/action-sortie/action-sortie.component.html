@@ -1,0 +1,239 @@
+<div>
+  <div class="nav">
+  @if (page > 1) {
+  <icon-button
+    class="av"
+    image="actions-arrow-left"
+    actionName="etapes"
+    size="medium"
+    (clicked)="onClickPage(-1)"
+  />
+  }
+  
+    @if(page < 3){
+    <icon-button
+      class="ap"
+      image="actions-arrow-right"
+      actionName="etapes"
+      size="medium"
+      (clicked)="onClickPage(1)"
+    />
+    }
+  </div>
+  <div class="scroll">
+    <div [className]="'content page' + page">
+      <!--  -->
+      <div class="A2">
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[0].sortie"
+            [poids]="1"
+            [value]="param.btA2[0]"
+            version="check"
+            (retour)="onClickCheckA2($event, 0)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[0].label"
+          />
+        </div>
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[1].sortie"
+            [poids]="2"
+            [value]="param.btA2[1]"
+            version="check"
+            (retour)="onClickCheckA2($event, 1)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[1].label"
+          />
+        </div>
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[2].sortie"
+            [poids]="4"
+            [value]="param.btA2[2]"
+            version="check"
+            (retour)="onClickCheckA2($event, 2)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[2].label"
+          />
+        </div>
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[3].sortie"
+            [poids]="8"
+            [value]="param.btA2[3]"
+            version="check"
+            (retour)="onClickCheckA2($event, 3)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[3].label"
+          />
+        </div>
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[4].sortie"
+            [poids]="16"
+            [value]="param.btA2[4]"
+            version="check"
+            (retour)="onClickCheckA2($event, 4)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[4].label"
+          />
+        </div>
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[5].sortie"
+            [poids]="32"
+            [value]="param.btA2[5]"
+            version="check"
+            (retour)="onClickCheckA2($event, 5)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[5].label"
+          />
+        </div>
+      </div>
+
+      <div class="A4">
+        <div class="fake"></div>
+        <div class="fake"></div>
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[6].sortie"
+            [poids]="1"
+            [value]="param.btA4[0]"
+            version="check"
+            (retour)="onClickCheckA4($event, 0)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[6].label"
+          />
+        </div>
+
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[7].sortie"
+            [poids]="2"
+            [value]="param.btA4[1]"
+            version="check"
+            (retour)="onClickCheckA4($event, 1)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[7].label"
+          />
+        </div>
+
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[8].sortie"
+            [poids]="4"
+            [value]="param.btA4[2]"
+            version="check"
+            (retour)="onClickCheckA4($event, 2)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[8].label"
+          />
+        </div>
+
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[9].sortie"
+            [poids]="8"
+            [(value)]="param.btA4[3]"
+            version="check"
+            (retour)="onClickCheckA4($event, 3)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[9].label"
+          />
+        </div>
+      </div>
+
+      <div class="A5">
+        <div class="fake"></div>
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[10].sortie"
+            [poids]="64"
+            [value]="param.btA5[6]"
+            version="check"
+            (retour)="onClickCheckA5($event, 6)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[10].label"
+          />
+        </div>
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[11].sortie"
+            [poids]="128"
+            [value]="param.btA5[7]"
+            version="check"
+            (retour)="onClickCheckA5($event, 7)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[11].label"
+          />
+        </div>
+        <div class="fake"></div>
+        <div class="sortie">
+          <switch-button
+            [label]="labelSortie[12].sortie"
+            [poids]="32"
+            [value]="param.btA6[5]"
+            version="check"
+            (retour)="onClickCheckA6($event, 5)"
+          />
+          <input-text
+            [nb]="20"
+            [enabled]="true"
+            [placeHolder]="'label'"
+            [(value)]="labelSortie[12].label"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-buttons (buttonClicked)="onClick($event)" />
+</div>

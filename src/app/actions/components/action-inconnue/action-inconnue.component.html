@@ -1,0 +1,15 @@
+<div>
+  <div class="txt">
+    <span>Cette action n'est pas disponible actuellement. Me contacter pour effectuer une mise à jour.</span>
+  </div>
+  <div class="param">
+    @for (item of param.param; track $index) {
+      <div class="item">
+        <span class="index">{{$index}}</span>
+        <span class="value">{{item}}</span>
+      </div>
+      
+    }
+  </div>
+  <app-buttons (buttonClicked)="onClick($event)"/>
+</div>

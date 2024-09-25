@@ -1,0 +1,110 @@
+<div>
+  <!-- Informations à affichier en haut de l'écran -->
+  <div class="index">
+    <!-- Index de l'étape en cour (ajoute un 0 si inférieure à 10) -->
+    <span
+      >Etape @if(stepIndex< 10){ n°0{{ stepIndex }} }@else { n°{{ stepIndex }}
+      }
+    </span>
+    <!-- Index de l'action en cour -->
+    <span>Action n°0{{ actionIndex }}</span>
+  </div>
+
+  <!-- Nom de l'action à afficher (ne n'affiche pas pour certaine actions) -->
+  @switch (action.actionID) {@case (3) {} @case (4) {}@case (11) {}@case (10) {} @case (6) {}@default {
+    <div class="titre">
+      <span>{{ action.actionNameTitre }}</span>
+    </div>
+  }}
+  
+  <!-- Action en cour de modification -->
+  <div class="action">
+    @switch (action.actionID) { @case (0) {
+    <ecran-action-aucune
+      [action]="action"
+      [autreAction]="autreAction"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } @case (2) {
+    <ecran-action-vissage
+      [action]="action"
+      [estVissage]="false"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } @case (1) {
+    <ecran-action-vissage
+      [action]="action"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } @case (3) {
+    <ecran-action-conso
+      [action]="action"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } @case(4){
+    <ecran-action-camera
+      [action]="action"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } @case(5){
+    <ecran-action-rfid
+      [action]="action"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } @case (6) { 
+      <ecran-action-sortie
+      [action]="action"
+      [labelSortie]="sorties"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } @case (7) {
+    <ecran-action-tracabilite-pcb
+      [action]="action"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } @case(8){
+      <ecran-action-impression
+      [action]="action"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } @case (9) {
+      <ecran-action-impression
+      [action]="action"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } @case (10) {
+      <ecran-action-scan
+      txt="Scan de l'étiquette DATAMATRIX"
+      txt2= "(Pour le nom du fichier txt PCB)"
+      [action]="action"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } @case (11) {
+      <ecran-action-scan
+      txt="Sauvegarde du fichier .TXT"
+      txt2="(Contenant les PCB)"
+      [action]="action"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } @default {
+    <ecran-action-inconnue
+    
+      [action]="action"
+      (btClicked)="onClickButton($event)"
+      (newAction)="onClickValidModif($event)"
+    />
+    } }
+  </div>
+</div>

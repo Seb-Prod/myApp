@@ -1,0 +1,86 @@
+<div class="fond">
+  <div class="top">
+    <icon-button
+      class="av"
+      image="actions-arrow-left"
+      actionName="etapes"
+      size="medium"
+      (clicked)="onClickPage(-1)"
+    />
+    <div class="infos">
+      <span>Transition</span>
+      <span>n°{{stepIndex}}</span>
+    </div>
+    <div class="temps">
+      <div class="ligne">
+        <span>Tempo:</span>
+        <input-number class="mini" [min]="0" [max]="99.9" [step]="0.1"/>
+        <span class="s">S</span>
+      </div>
+      <div class="ligne">
+        <span>Défaut:</span>
+        <input-number class="mini" [min]="0" [max]="99.9"  [step]="0.1"/>
+        <span class="s">S</span>
+      </div>
+    </div>
+    <icon-button
+      class="ap"
+      image="actions-arrow-right"
+      actionName="etapes"
+      size="medium"
+      (clicked)="onClickPage(1)"
+    />
+  </div>
+
+  <div class="scroll">
+    <div [className]="'content page' + page">
+      <app-transition-entree lbl="E2.0" [poids]="param.entreeE2[0]" [texte]="labelEntree[0].label" />
+      <app-transition-entree lbl="E2.1" [poids]="param.entreeE2[1]" [texte]="labelEntree[1].label" />
+      <app-transition-entree lbl="E2.2" [poids]="param.entreeE2[2]" [texte]="labelEntree[2].label" />
+      <app-transition-entree lbl="E2.3" [poids]="param.entreeE2[3]" [texte]="labelEntree[3].label" />
+      <app-transition-entree lbl="E2.4" [poids]="param.entreeE2[4]" [texte]="labelEntree[4].label" />
+      <app-transition-entree lbl="E2.5" [poids]="param.entreeE2[5]" [texte]="labelEntree[5].label" />
+      <app-transition-entree lbl="E2.6" [poids]="param.entreeE2[6]" [texte]="labelEntree[6].label" />
+      <app-transition-entree lbl="E2.7" [poids]="param.entreeE2[7]" [texte]="labelEntree[7].label" />
+
+      
+      <app-transition-entree lbl="E3.0" [poids]="param.entreeE3[0]" [texte]="labelEntree[8].label" />
+      <app-transition-entree lbl="E3.1" [poids]="param.entreeE3[1]" [texte]="labelEntree[9].label" />
+      <app-transition-entree lbl="E3.2" [poids]="param.entreeE3[2]" [texte]="labelEntree[10].label" />
+      <app-transition-entree lbl="E3.3" [poids]="param.entreeE3[3]" [texte]="labelEntree[11].label" />
+      <app-transition-entree lbl="E3.4" [poids]="param.entreeE3[4]" [texte]="labelEntree[12].label" />
+      <app-transition-entree lbl="E3.5" [poids]="param.entreeE3[5]" [texte]="labelEntree[13].label" />
+      <app-transition-entree lbl="E3.6" [poids]="param.entreeE3[6]" [texte]="labelEntree[14].label" />
+      <app-transition-entree lbl="E3.7" [poids]="param.entreeE3[7]" [texte]="labelEntree[15].label" />
+
+      <app-transition-entree lbl="E4.0" [poids]="param.entreeE4[0]" [texte]="labelEntree[16].label" />
+      <app-transition-entree lbl="E4.1" [poids]="param.entreeE4[1]" [texte]="labelEntree[17].label" />
+      <app-transition-entree lbl="E4.2" [poids]="param.entreeE4[2]" [texte]="labelEntree[18].label" />
+      <app-transition-entree lbl="E4.3" [poids]="param.entreeE4[3]" [texte]="labelEntree[19].label" />
+      <app-transition-entree lbl="E4.4" [poids]="param.entreeE4[4]" [texte]="labelEntree[20].label" />
+      <app-transition-entree lbl="E4.5" [poids]="param.entreeE4[5]" [texte]="labelEntree[21].label" />
+      <app-transition-entree lbl="E4.6" [poids]="param.entreeE4[6]" [texte]="labelEntree[22].label" />
+      <app-transition-entree lbl="E4.7" [poids]="param.entreeE4[7]" [texte]="labelEntree[23].label" />
+
+      <app-transition-entree lbl="E6.0" [poids]="param.entreeE6[0]" [texte]="labelEntree[24].label" />
+      <app-transition-entree lbl="E6.1" [poids]="param.entreeE6[1]" [texte]="labelEntree[25].label" />
+      <app-transition-entree lbl="E6.2" [poids]="param.entreeE6[2]" [texte]="labelEntree[26].label" />
+      <app-transition-entree lbl="E6.3" [poids]="param.entreeE6[3]" [texte]="labelEntree[27].label" />
+      <div class="fake"></div>
+      <div class="fake"></div>
+      <div class="fake"></div>
+      <app-transition-entree lbl="E6.7" [poids]="param.entreeE6[7]" [texte]="labelEntree[28].label" />
+
+      <div class="fake"></div>
+      <div class="fake"></div>
+      <app-transition-entree lbl="E7.2" [poids]="param.entreeE7[2]" [texte]="labelEntree[29].label" />
+      <app-transition-entree lbl="E7.3" [poids]="param.entreeE7[3]" [texte]="labelEntree[30].label" />
+      <div class="fake"></div>
+      <div class="fake"></div>
+      <div class="fake"></div>
+      <div class="fake"></div>
+
+    </div>
+  </div>
+  
+</div>

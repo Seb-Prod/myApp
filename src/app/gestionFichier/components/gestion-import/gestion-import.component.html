@@ -1,0 +1,14 @@
+<div class="body">
+  <!-- Info sur le programme en cours -->
+  <app-info-programme [name]="progName" [codage]="progCode"/>
+  <app-titre titre="Import du programme" (clicked)="onClick($event)"/>
+  <span>Nom du dossier d'importation:</span>
+  <div class="import">
+    <input type="text" disabled placeholder="{{folderName()}}">
+    <input type="file" hidden #fileInput webkitdirectory (change)="onFileChange($event)">
+    <button (click)="fileInput.click()">Importer</button>
+  </div>
+  <div class="message">
+    <span>{{message()}}</span>
+  </div>
+</div>

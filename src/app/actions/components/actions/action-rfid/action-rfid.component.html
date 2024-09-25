@@ -1,0 +1,48 @@
+<div>
+  <div class="btAcces">
+    <switch-button label="RAZ" [poids]="0" [(value)]="param.acces" />
+    <switch-button label="Lecture" [poids]="2" [(value)]="param.acces" />
+    <switch-button label="Ecriture" [poids]="1" [(value)]="param.acces" />
+  </div>
+  <div class="ligne">
+    @if(param.acces == 2){
+    <span>N° de station précédente:</span>
+    <input-text
+      [nb]="3"
+      [enabled]="true"
+      [placeHolder]="'Id st'"
+      [(value)]="param.stAv"
+    />
+    }
+  </div>
+  <div class="ligne">
+    @if(param.acces ==1){
+    <span>N° de station actuelle:</span>
+    <input-text
+      [nb]="3"
+      [enabled]="true"
+      [placeHolder]="'Id st'"
+      [(value)]="param.stAc"
+    />
+    }
+  </div>
+  <div class="ligne">
+    @if(param.acces ==1 || param.acces==2){
+      <span>N° de produit:</span>
+      <input-text
+        class="produit"
+        [nb]="3"
+        [enabled]="true"
+        [placeHolder]="'Référence'"
+        [(value)]="param.produit"
+      />
+    }
+    
+  </div>
+  <div class="ligne">
+    <span>N° de tete:</span>
+    <switch-button label="1" [poids]="0" [(value)]="param.tete" />
+    <switch-button label="2" [poids]="1" [(value)]="param.tete" />
+  </div>
+  <app-buttons (buttonClicked)="onClick($event)" />
+</div>

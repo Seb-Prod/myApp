@@ -1,0 +1,12 @@
+.body {
+    background: rgb(24,64,13);
+    display: flex;
+    flex-direction: column;
+    height: 384px;
+    width: 510px;
+    position: relative;
+
+    span{
+        font-size: 22px;
+    }
+}

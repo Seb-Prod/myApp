@@ -1,0 +1,16 @@
+<div>
+    <input
+    type="number"
+    [min]="min"
+    [max]="max"
+    [step]="step"
+    [(ngModel)]="value"
+    oninput="validity.valid||(value='0');"
+    (change)="onChange()"
+    [disabled]="!enabled"
+  />
+  <span>{{min}} ≤ {{value()}} ≤ {{max}}</span>
+    
+</div>
+
+

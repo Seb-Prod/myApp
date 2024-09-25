@@ -1,0 +1,17 @@
+
+
+@if (version == "check") {
+    <input 
+    type="button" 
+    [value]="label" 
+    [className]="color + ' ' + check()"
+    (click)="onClickCheckVersion()"
+    >
+}@else{
+    <input 
+    type="button" 
+    [value]="label" 
+    [className]="color + ' ' + check()"
+    (click)="onClick()"
+    >
+}

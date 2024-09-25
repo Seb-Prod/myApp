@@ -1,0 +1,44 @@
+div{
+    display: flex;
+    flex-direction: column;
+
+    .txt{
+        margin-top: 20px;
+    }
+
+    .param{
+        flex-direction: row;
+        margin: auto;
+
+        .item{
+            flex-direction: column;
+            display:table-row;
+            text-align: center;
+
+            .index {
+                
+                width: 20px;
+                font-size: 8px;
+                margin: auto;
+            }
+
+            .value {
+                display: table-cell;
+                vertical-align: middle;
+                border: 1px solid black;
+                width: 20px;
+                height: 20px;
+                font-size: 8px;
+                text-align: center;
+            }
+
+            .value:hover{
+                background: orange;
+            }
+        }
+    }
+
+    app-buttons{
+        margin-top: 149px;
+    }
+}

@@ -1,0 +1,10 @@
+<div >
+  @if(label){
+    <div [className]="infoPosition">
+      <span>{{label}}</span>
+    </div>
+  }
+  <button [className]="size">
+    <img (click)="onClick()"  src="/img/{{image}}.png" alt="{{image}}">
+  </button>
+</div>

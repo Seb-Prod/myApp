@@ -1,0 +1,15 @@
+<div>
+  <div class="ligne1">
+    <span>Contrôle camera :</span>
+    <switch-button label="Désactivé" [poids]="0" [(value)]="param.camera" color="red" />
+  </div>
+  <div class="ligne2">
+    <switch-button class="cam1" label="Caméra n°1" [poids]="1" [(value)]="param.camera"/>
+    <switch-button class="cam2" label="Caméra n°2" [poids]="2" [(value)]="param.camera"/>
+  </div>
+  <div class="ligne3">
+    <span>N° Programme caméra : </span>
+    <input-number [(value)]="param.programme" [min]="1"  [max]="8"/>
+  </div>
+  <app-buttons (buttonClicked)="onClick($event)"/>
+</div>

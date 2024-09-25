@@ -1,0 +1,146 @@
+.stepNavigation{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 92px;
+    height: 297px;
+    padding: 5px;
+
+    .btUp{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btInitial{
+        border-radius: 10px;
+        display: table;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60px;
+
+        span{
+            font-size: 14px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    .btInitial:hover{
+        background: rgba(255, 255, 255, 0.043);
+    }
+
+    .stepIndex{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        border: 1px solid blue;
+        border-radius: 5px;
+        background: white;
+        color: black;
+        height: 70px;
+        width: 80px;
+        display: table;
+        text-align: center;
+
+        span{
+            font-size: 40px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    .stepIndex::before{
+        content: '';
+        position: absolute;
+        background: white;
+        width: 2px;
+        height: 10px;
+        left: 50%;
+        top: -11px;
+    }
+    .stepIndex::after{
+        content: '';
+        position: absolute;
+        background: white;
+        width: 2px;
+        height: 10px;
+        left: 50%;
+        top: 71px;
+    }
+
+    .btTransition{
+        border: none;
+        padding: none;
+        border-radius: 10px;
+        background: none;
+        position: relative;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60px;
+        width: 60px;
+
+        div{
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        div::before{
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 60px;
+            left: 50%;
+            background: white;
+        }
+
+        div::after{
+            position: absolute;
+            content: '';
+            width: 40px;
+            height: 2px;
+            left: 5px;
+            top: 50%;
+            background: white;
+        }
+    }
+    .btTransition::before{
+        content: '';
+        position: absolute;
+        background: white;
+        width: 2px;
+        height: 11px;
+        left: 50%;
+        top: -10px;
+    }
+
+    .btTransition::after{
+        content: '';
+            position: absolute;
+            background: white;
+            width: 2px;
+            height: 10px;
+            left: 50%;
+            top: 60px;
+    }
+
+    .btTransition:hover{
+        background: rgba(255, 255, 255, 0.043);
+    }
+
+    .btDown{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fackButton{
+        width: 60px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,40 @@
+div{
+    display: flex;
+    flex-direction: column;
+
+    span{
+        font-size: 22px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10px;
+    }
+
+    .ligne1{
+        margin-top: 60px;
+        flex-direction: row;
+
+        .ref{
+            width: 100px;
+            margin-right: 40px;
+            margin-left: 10px;
+        }
+
+        .revision{
+            width: 50px;
+            margin-left: 10px;
+        }
+    }
+
+    .ligne2{
+        margin-top: 30px;
+        flex-direction: row;
+
+        input-number{
+            width: 80px;
+        }
+    }
+
+    app-buttons{
+        margin-top: 44px;
+    }
+}

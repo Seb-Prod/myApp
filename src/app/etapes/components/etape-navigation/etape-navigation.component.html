@@ -1,0 +1,28 @@
+<div class="stepNavigation">
+  <!-- Condition qui affiche le bouton -->
+  @if(stepIndex() > 1){
+  <!-- Bouton étape précèdente -->
+   <icon-button class="btUp" image="go-up" (clicked)="onEtapeChange(-1)"/>
+  }@else {
+  <!-- Bouton condition Initiale -->
+  <div class="btInitial" (click)="onclickButtonInitial()"><span>Conditions Initiales</span></div>
+  }
+
+  <!-- Affichage de l'index de l'étape en cour -->
+  <div class="stepIndex">
+    <span>{{ stepIndex() }}</span>
+  </div>
+
+  <!-- Bouton transition -->
+   <button class="btTransition" (click)="onclickButton('transition')">
+    <div></div>
+   </button>
+
+
+  <!-- Condition qui affiche le boutons etape suivante -->
+  @if(stepIndex() < 20){
+    <icon-button class="btDown" image="go-down" (clicked)="onEtapeChange(1)"/>
+  }@else {
+    <div class="fackButton"></div>
+  }
+</div>

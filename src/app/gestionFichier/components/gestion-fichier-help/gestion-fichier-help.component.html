@@ -1,0 +1,24 @@
+<div class="body">
+  <app-info-programme [name]="progName" [codage]="progCode"/>
+  <app-titre titre="Aide" (clicked)="onClick()"/>
+
+  <div class="aide">
+    <div class="titre">
+      <img src="/img/download.png" alt="">
+      <span>Importation</span>
+    </div>
+    <div class="texte">
+      <span>Importation des 4 fichiers .BIN provenant du répertoire d'une exportation depuis un poste.</span>
+    </div>
+  </div>
+
+  <div class="aide">
+    <div class="titre">
+      <img src="/img/upload.png" alt="">
+      <span>Exportation</span>
+    </div>
+    <div class="texte">
+      <span>Exportation du programme sous forme de 4 fichiers .BIN, à placer dans un répertoire avec un nom de mois de 8 caractères pour pouvoir l'utiliser sur le poste.</span>
+    </div>
+  </div>
+</div>

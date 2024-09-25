@@ -1,0 +1,41 @@
+span {
+    font-size: 22px;
+    color: white;
+}
+
+div {
+    width: 510px;
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(2,63,64);
+
+    .index {
+        display: flex;
+        flex-direction: row;
+        height: 29px;
+
+        span {
+            margin: auto;
+        }
+    }
+
+    .titre {
+        height: 29px;
+        margin-top: 10px;
+
+        span {
+            margin: auto;
+        }
+
+    }
+
+    .action{
+        height: 316px;
+    }
+
+    
+
+
+
+}

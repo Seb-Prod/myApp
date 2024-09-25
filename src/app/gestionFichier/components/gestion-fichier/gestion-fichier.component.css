@@ -1,0 +1,47 @@
+.body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    height: 384px;
+    width: 510px;
+    position: relative;
+
+    span{
+        font-size: 22px;
+    }
+
+    .content {
+        background: orchid;
+        display: flex;
+        width: 510px;
+        height: 276px;
+
+        .div {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .export {
+            background: rgb(24,64,13);
+        }
+
+        .import {
+            background: rgb(149,44,20);
+        }
+
+        .label{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button{
+            margin: auto;
+            width: 120px;
+            height: 120px;
+        }
+    }
+}

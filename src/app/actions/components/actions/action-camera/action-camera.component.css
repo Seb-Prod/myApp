@@ -1,0 +1,58 @@
+span {
+    font-size: 22px;
+    color: white;
+}
+
+switch-button{
+    width: 150px;
+    height: 40px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+
+    .ligne1{
+        flex-direction: row;
+        margin-top: 30px;
+
+        span{
+            margin: auto;
+            margin-left: 10px;
+        }
+
+        switch-button{
+            margin-left: auto;
+            transform: translateX(-10px);
+        } 
+    }
+
+    .ligne2{
+        flex-direction: row;
+        margin-top: 20px;
+
+        .cam1{
+            margin-left: 10px;
+        }
+
+        .cam2{
+            margin-left: auto;
+            transform: translateX(-10px);
+        }
+    }
+
+    .ligne3{
+        flex-direction: row;
+        margin-top: 50px;
+
+        span{
+            margin-left: 10px;
+        }
+    }
+
+    app-buttons{
+        margin-top:84px;
+    }
+
+
+}

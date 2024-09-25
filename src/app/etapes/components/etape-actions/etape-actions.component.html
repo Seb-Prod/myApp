@@ -1,0 +1,28 @@
+<div class="action">
+  <span>Message opérateur :</span>
+  <input-text [nb]="8" [enabled]="true" [placeHolder]="'Message opérateur'" [(value)]="etape().message"/>
+  <div class="content">
+    <div class="button">
+      <span>Action 1:</span>
+      <button (click)="onClickAction(1)">{{action1().actionName}}</button>
+    </div>
+    <div class="button">
+      <span>Action 2:</span>
+      <button (click)="onClickAction(2)">{{action2().actionName}}</button>
+    </div>
+    <div class="button">
+      <span>Action 3:</span>
+      <button (click)="onClickAction(3)">{{action3().actionName}}</button>
+    </div>
+    <div class="button">
+      <span>Action 4:</span>
+      <button (click)="onClickAction(4)">{{action4().actionName}}</button>
+    </div>
+    <div class="button">
+      <span>Action 5:</span>
+      <button (click)="onClickAction(5)">{{action5().actionName}}</button>
+    </div>
+  </div>
+  
+  
+</div>

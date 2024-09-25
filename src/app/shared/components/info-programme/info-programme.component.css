@@ -1,0 +1,21 @@
+div {
+    width: 510px;
+    height: 28px;
+    display: flex;
+
+    span{
+        font-size: 14px;
+        margin-top: auto;
+        margin-bottom: auto;
+        color: white;
+        margin-left: 10px;
+    }
+
+    .name{
+        width: 394px;
+    }
+
+    .codage{
+        width: 40px;
+    }
+}

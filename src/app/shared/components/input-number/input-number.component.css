@@ -1,0 +1,40 @@
+div{
+    position: relative;
+    width: 100%;
+}
+input{
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+span{
+    position: absolute;
+    background: orange;
+    padding: 10px;
+    border-radius: 5px;
+    width:max-content;
+    left: calc(100% + 15px);
+    top: 0;
+    transform: translateX(50px);
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+span::before{
+    content: '';
+    background: orange;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    left: -5px;
+    transform: rotate(45deg);
+}
+
+input:focus ~ span{
+    transform: translateX(0px);
+    visibility: visible;
+    opacity: 1;
+}

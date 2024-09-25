@@ -1,0 +1,91 @@
+<div>
+  <div class="div">
+    <div class="col">
+      <switch-button
+        label="Sortie"
+        [poids]="6"
+        [value]="actionList[5]"
+        color="red"
+        (retour)="onClickAction(6)"
+      />
+      <switch-button
+        label="RFID"
+        [poids]="5"
+        [value]="actionList[4]"
+        color="red"
+        (retour)="onClickAction(5)"
+      />
+      <switch-button
+        label="Caméra"
+        [poids]="4"
+        [value]="actionList[3]"
+        color="red"
+        (retour)="onClickAction(4)"
+      />
+      <switch-button
+        label="Impression Gauche"
+        [poids]="8"
+        [value]="actionList[7]"
+        color="red"
+        (retour)="onClickAction(8)"
+      />
+      <switch-button
+        label="Soudure US"
+        [poids]="2"
+        [value]="actionList[1]"
+        color="red"
+        (retour)="onClickAction(2)"
+      />
+    </div>
+    <div class="col">
+      <switch-button
+        label="Vissage"
+        [poids]="1"
+        [value]="actionList[0]"
+        color="red"
+        (retour)="onClickAction(1)"
+      />
+      <switch-button
+        label="Consommation"
+        [poids]="3"
+        [value]="actionList[2]"
+        color="red"
+        (retour)="onClickAction(3)"
+      />
+      <switch-button
+        label="Traçabilité PCB"
+        [poids]="7"
+        [value]="actionList[6]"
+        color="red"
+        (retour)="onClickAction(7)"
+      />
+      <switch-button
+        label="Impression Droite"
+        [poids]="9"
+        [value]="actionList[8]"
+        color="red"
+        (retour)="onClickAction(9)"
+      />
+      <switch-button
+        label="Scan DATAMATRIX"
+        [poids]="10"
+        [value]="actionList[9]"
+        color="red"
+        (retour)="onClickAction(10)"
+      />
+      <switch-button
+        label="Save PCB .TXT"
+        [poids]="11"
+        [value]="actionList[10]"
+        color="red"
+        (retour)="onClickAction(11)"
+      />
+    </div>
+  </div>
+  <icon-button
+    image="home"
+    label="Retour"
+    actionName="etapes"
+    (clicked)="onClick($event)"
+  />
+</div>

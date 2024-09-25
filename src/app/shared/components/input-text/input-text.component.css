@@ -1,0 +1,9 @@
+input{
+    width: 100%;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    /* font-size: 8px; */
+    color: rgb(176, 174, 174);
+}
